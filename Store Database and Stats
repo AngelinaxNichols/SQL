@@ -1,0 +1,33 @@
+CREATE TABLE shirts ( id INTEGER PRIMARY KEY, name TEXT, size TEXT, price INTEgER, quantity INTEGER);
+
+INSERT INTO shirts VALUES (1, "a", "M", "20","12"); 
+INSERT INTO shirts VALUES (2, "b", "L", "20","9");
+INSERT INTO shirts VALUES (3, "c", "S", "20","55"); 
+INSERT INTO shirts VALUES (4, "d", "XS", "20","60"); 
+INSERT INTO shirts VALUES (5, "e", "XL", "40","65"); 
+INSERT INTO shirts VALUES (6, "a", "T6", "20","12"); 
+INSERT INTO shirts VALUES (7, " b", "XXS", "20","14"); 
+INSERT INTO shirts VALUES (8, "c", "XL", "40","50");
+INSERT INTO shirts VALUES (9, "d", "T12", "20","12"); 
+INSERT INTO shirts VALUES (10, "e", "T0", "20","14"); 
+INSERT INTO shirts VALUES (11, "a", "T4", "40","50");
+INSERT INTO shirts VALUES (12, "b", "S", "20","12"); 
+INSERT INTO shirts VALUES (13, "c", "XXL", "40","50");
+INSERT INTO shirts VALUES (15, "d", "XXS", "40","50");
+
+CREATE TABLE name ( name TEXT, quantity INTEGER PRIMARY KEY ); 
+
+INSERT INTO name VALUES ("a","12");
+INSERT INTO name VALUES ("b","9");
+INSERT INTO name VALUES ("c","55");
+INSERT INTO name VALUES ("d","60");
+INSERT INTO name VALUES ("e","65");
+
+
+SELECT * FROM shirts order by price;
+SELECT * FROM name;
+
+
+--display the database ordered by price. 
+SELECT * FROM store
+ORDER BY price; 
